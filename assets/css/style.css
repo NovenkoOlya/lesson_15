@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(176, 185, 192);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-color: rgb(46, 46, 46);
+    justify-content: space-between;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header h1{
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+}
+
+main h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    display: flex;
+    color: white;
+    
+}
+
+nav a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+}
+
+main{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+}
+
+.main-right{
+    width: 50%;
+    height: 70vh;
+    background-color: rgb(46, 46, 46);
+    border: 4px solid black;
+}
+
+.main-right p{
+    padding: 10px;
+}
+
+.main-left{
+    width: 50%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.card{
+    max-width: 200px;
+    height: auto;
+    border: 4px solid black;
+    margin: 15px;
+}
+
+.card-title{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 15px 10px;
+}
+
+.card-text {
+    padding: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1284px) {
+    main{
+        flex-direction: column;
+    }
+    .main-left{
+        width: 100%;
+    }
+    .main-right{
+        width: 100%;
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: block;
+    }
+    header ul{
+        display: block;
+    }
+    header li{
+        border-top: 1px solid white;
+    }
+}
